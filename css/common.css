@@ -1,0 +1,7 @@
+*{
+  -webkit-touch-callout:none;
+  user-select:none;
+}
+input, textarea, .van-field__body, .van-field__control{
+  user-select: auto;
+}

@@ -1,0 +1,13 @@
+{
+	"tabbar.html": {
+		"resources": [
+			"tab-main.html"
+		],
+		"refer": [
+			"tab-setting.html",
+			"tab-message.html",
+			"tab-main.html",
+			"tab-contact.html"
+		]
+	}
+}

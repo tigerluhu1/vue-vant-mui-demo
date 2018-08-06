@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/vant.css"/>
+    <script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div id="app">
+    <template>
+        <van-nav-bar title="地址" left-arrow left-text="返回" @click-left="$mui.back()"/>
+    </template>
+    <template>
+        <van-address-list
+                v-model="chosenAddressId"
+                :list="list"
+                @add="onAdd"
+                @edit="onEdit"
+        />
+    </template>
+</div>
+</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/vant.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  mui.init();
+  app.init();
+  mui.plusReady(() => {
+    let vm = new Vue({
+      el: '#app',
+      data: {
+        chosenAddressId: '1',
+        list: [
+          {
+            id: '1',
+            name: '张三',
+            tel: '13000000000',
+            address: '浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室'
+          },
+          {
+            id: '2',
+            name: '李四',
+            tel: '1310000000',
+            address: '浙江省杭州市拱墅区莫干山路 50 号'
+          }
+        ]
+      },
+      methods: {
+        onAdd() {
+          this.$toast('新增收货地址');
+        },
+        onEdit(item, index) {
+          this.$toast('编辑收货地址:' + index);
+        }
+      }
+    })
+  })
+</script>
