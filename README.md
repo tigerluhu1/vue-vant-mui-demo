@@ -4,6 +4,8 @@
 
 > qq 971270272
 
+> 话说怎么这么多乱码。。算了，就这样吧
+
 ## 直接下载，然后在 hbuilder 中 app 或者模拟器方式运行即可
 
 
@@ -11,8 +13,8 @@
 ### 在 common 文件中 对 mui axios 等做了 二次封装，可以直接在vue中使用
 ### 此时vue 将不是单页面程序， 页面跳转 $app.push('xxx.html', {[跳转参数] })
 ### 可以直接 复制 copy.html 快速生成模板文件
-### 使用了 沉浸式 状态栏
-### config.js 即可自己移除 git 仓库啊
+### 使用了沉浸式 状态栏
+### config.js 记得自己移除 git 仓库啊
 
 
 [vant文档](https://youzan.github.io/vant/#/zh-CN/intro)
