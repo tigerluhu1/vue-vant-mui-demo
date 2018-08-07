@@ -19,10 +19,10 @@
     </template>
     <template>
         <van-address-list
-                v-model="chosenAddressId"
-                :list="list"
-                @add="onAdd"
-                @edit="onEdit"
+            v-model="chosenAddressId"
+            :list="list"
+            @add="onAdd"
+            @edit="onEdit"
         />
     </template>
 </div>
@@ -37,8 +37,8 @@
 <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
   mui.init();
-  app.init();
   mui.plusReady(() => {
+  		app.init();
     let vm = new Vue({
       el: '#app',
       data: {

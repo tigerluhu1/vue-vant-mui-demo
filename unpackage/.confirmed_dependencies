@@ -1,13 +1,23 @@
 {
 	"tabbar.html": {
 		"resources": [
-			"tab-main.html"
+			"tab-main.html",
+			"view/home.html"
 		],
 		"refer": [
 			"tab-setting.html",
 			"tab-message.html",
 			"tab-main.html",
-			"tab-contact.html"
+			"tab-contact.html",
+			"view/message.html",
+			"view/home.html",
+			"view/cart.html",
+			"view/my.html"
+		]
+	},
+	"view/home.html": {
+		"refer": [
+			"view/address.html"
 		]
 	}
 }

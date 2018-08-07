@@ -32,17 +32,19 @@
 <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
   mui.init();
-  app.init();
-  let vm = new Vue({
-    el: '#app',
-    methods: {
-      getInfo() {
-        this.$request({
-          url: 'user/token'
-        }).then(res => {
-          console.log(res)
-        })
+  mui.plusReady(() => {
+    app.init();
+    let vm = new Vue({
+      el: '#app',
+      methods: {
+        getInfo() {
+          this.$request({
+            url: 'user/token'
+          }).then(res => {
+            console.log(res)
+          })
+        }
       }
-    }
+    })
   })
 </script>

@@ -32,11 +32,13 @@
 <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
   mui.init();
-  app.init();
-  let vm = new Vue({
-    el: '#app',
-    data: {
-      message: "信息"
-    }
+  mui.plusReady(() => {
+    app.init();
+    let vm = new Vue({
+      el: '#app',
+      data: {
+        message: "信息"
+      }
+    })
   })
 </script>

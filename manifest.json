@@ -131,12 +131,23 @@
 		"pages": {
 			"tabbar.html": {
 				"resources": [
-					"tab-main.html"
+					"tab-main.html",
+					"view/home.html"
 				],
 				"refer": [
 					"tab-setting.html",
 					"tab-message.html",
-					"tab-contact.html"
+					"tab-contact.html",
+					"view/message.html",
+					"view/cart.html",
+					"view/my.html"
+				],
+				"priority": 0
+			},
+			"view/home.html": {
+				"resources": [],
+				"refer": [
+					"view/address.html"
 				],
 				"priority": 0
 			}
@@ -147,7 +158,6 @@
 				"fonts/mui.ttf",
 				"css/mui.css",
 				"view/copy.html",
-				"view/home.html",
 				"js/fastclick.js",
 				"js/axios.min.js",
 				"js/common.js",
