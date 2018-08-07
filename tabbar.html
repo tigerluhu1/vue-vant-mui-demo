@@ -34,6 +34,7 @@
   mui.plusReady(() => {
     // app 初始化设置
     app.init();
+    app.moveTaskToBack();
     let styles = {
       top: '0',
       bottom: '50px' // 根据实际情况，不设置也可以
@@ -70,7 +71,7 @@
         self: plus.webview.currentWebview(),
         tabs: []
       },
-      mounted () {
+      mounted() {
         this.setWebView();
       },
       methods: {

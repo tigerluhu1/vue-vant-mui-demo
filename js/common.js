@@ -40,11 +40,17 @@ const app = {
 			extras
 		});
 	},
+  moveTaskToBack () {
+    // app 最小化
+    mui.back = () => {
+      let main = plus.android.runtimeMainActivity();
+      main.moveTaskToBack(false);
+    }
+  },
 	init() {
 		app._setStatusBar();
 		app._setStatusBarPaddingTop();
-	},
-	mui
+	}
 }
 // 公共函数
 const common = {
